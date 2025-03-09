@@ -10,7 +10,7 @@ const port = process.env.PORT || 5001;
 
 // Configuración específica de CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // URL de tu frontend
+  origin: ['http://localhost:5173', 'https://tradz.netlify.app'], // URLs permitidas
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
